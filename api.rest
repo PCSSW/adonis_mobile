@@ -4,17 +4,17 @@ POST https://adonismobile.onrender.com/register HTTP/1.1
 Content-Type: application/json
 
 {
-    "name": "Alexandre Vieira",
-    "email": "alexandre@gmail.com",
+    "name": "Alexandre Vieira Borges",
+    "email": "alexandre123@gmail.com",
     "password": "1234567"
 }
 
 ### Autenticar usuário
 
-POST https://adonismobile.onrender.com//login HTTP/1.1
+POST https://adonismobile.onrender.com/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email": "alexandre@gmail.com",
+    "email": "alexandre123@gmail.com",
     "password": "1234567"
 }
