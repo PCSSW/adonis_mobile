@@ -1,14 +1,14 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
-import User from 'App/Models/User'
+import User from '../../Models/User'
 
 export default class UsersController {
-  public async index({}: HttpContextContract) {}
+  public async index({ }: HttpContextContract) { }
 
-  public async store({}: HttpContextContract) {}
+  public async store({ }: HttpContextContract) { }
 
-  public async show({}: HttpContextContract) {}
+  public async show({ }: HttpContextContract) { }
 
-  public async update({request, auth}: HttpContextContract) {
+  public async update({ request, auth }: HttpContextContract) {
     const { token } = request.all()
     const userDB = await User.findOrFail(auth.user?.id)
     userDB.token = token
@@ -16,5 +16,5 @@ export default class UsersController {
     return userDB
   }
 
-  public async destroy({}: HttpContextContract) {}
+  public async destroy({ }: HttpContextContract) { }
 }
